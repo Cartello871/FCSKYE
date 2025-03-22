@@ -246,3 +246,69 @@ footer p {
 .delete-player:hover {
     background: darkred;
 }
+
+/* 📱 Адаптивность */
+
+/* Маленькие экраны (до 600px) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .players-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-card {
+        width: 90%;
+    }
+
+    .matches-table {
+        font-size: 14px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+/* 📲 Средние экраны (планшеты, 600px - 1024px) */
+@media (max-width: 1024px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .player-card {
+        width: 200px;
+    }
+
+    .admin-container {
+        width: 80%;
+    }
+
+    table {
+        font-size: 16px;
+    }
+}
